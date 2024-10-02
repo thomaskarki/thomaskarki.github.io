@@ -1,0 +1,2445 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('network-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #333;
+}
+
+/* Services Section */
+.services {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+	COLOR: BLACK;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: black;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.skills-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+	color: black;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+	color: black;
+}
+
+.skill-card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-section form textarea {
+    height: 150px;
+}
+
+.contact-section form button {
+    padding: 12px 24px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+/* Hero Section with Background Image */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero .btn-primary:hover {
+    background-color: #333;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Featured Projects Section */
+.projects-home {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.projects-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333; /* Set a dark color for the text */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347; /* Adding a highlight color for the logo */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white; /* Navbar links remain white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Dark font color for readability */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero .btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero .btn-primary:hover {
+    background-color: #333;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for headings */
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Featured Projects Section */
+.projects-home {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.projects-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+/* Contact Section Styling */
+.contact-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Form Card */
+.contact-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.form-group i {
+    margin-right: 10px;
+    color: #ff6347;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff6347;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button Styling */
+.contact-card .btn-primary {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card .btn-primary:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+/* Portfolio Coming Soon Section */
+.portfolio-coming-soon {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio-coming-soon h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.portfolio-coming-soon p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.placeholder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.placeholder-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.placeholder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.placeholder-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.placeholder-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.placeholder-card p {
+    font-size: 1rem;
+    color: #555;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Projects Coming Soon Section */
+.coming-soon {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.coming-soon .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.animated-heading {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.coming-soon-banner {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.coming-soon-banner img {
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.coming-soon-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+}
+
+.coming-soon-banner:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section (Top Middle Alignment) */
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns the content near the top */
+    text-align: center; /* Text centered */
+    padding: 60px 20px; /* Adds space around the hero content */
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px; /* Limit the width for readability */
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section (Top Middle Alignment) */
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns the content near the top */
+    text-align: center; /* Text centered */
+    padding: 60px 20px; /* Adds space around the hero content */
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px; /* Limit the width for readability */
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color:;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section (Top Middle-Right Alignment, No Extra Space) */
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    align-items: flex-start; /* Aligns the content at the top */
+    text-align: right; /* Align text to the right */
+    color: #333;
+    padding: 20px; /* Minimal padding */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 600px; /* Limit the width for readability */
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: ;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 10px 0; /* Reduced padding for tighter spacing */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Slightly reduced gap */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px; /* Reduced padding */
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: ;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh; /* Reduced height for tighter design */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center;
+    color: ;
+    padding: 0; /* No extra padding */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Slightly reduced font size */
+    margin-bottom: 15px; /* Tighter margin */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px; /* Reduced margin */
+    max-width: 600px; /* Limit the width for readability */
+}
+
+/* About Me Section */
+.about-home {
+    padding: 60px 20px; /* Reduced padding */
+    background-color: ;
+    text-align: center;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: ;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: ;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 60px 20px; /* Reduced padding */
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Reduced margin */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main content wrapper */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Portfolio Coming Soon Section */
+.portfolio-coming-soon {
+    flex: 1; /* Takes up the remaining height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-coming-soon h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.portfolio-coming-soon p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+/* Apply the image to the entire website */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('your-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: ;
+    line-height: 1.6;
+}
+
+/* General Styling */
+html, body {
+    height: 100%;
+}
+
+/* Content sections will have a slight background overlay to ensure readability */
+.container {
+    background-color: ; /* Semi-transparent white overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: ;
+}
+
+/* Navbar */
+.navbar {
+    background-color: ; /* Semi-transparent navbar */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: ; /* Semi-transparent footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url('your-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent navbar */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Hero Section (Profile Section) */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ff6347; /* Cute border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add dynamic shadow on hover */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    color: #fff;
+}
+
+/* About Me Section */
+.about-home {
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* General Styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url('your-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Set all text color to white */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent navbar */
+    padding: 1px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    color: White; /* White logo text */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    color: white; /* All navbar links white */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Hero Section (Profile Section) */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Set text in hero section to white */
+    padding: 0;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ff6347; /* Cute border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add dynamic shadow on hover */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #fff; /* White font color */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    color: #fff; /* White font color */
+}
+
+/* About Me Section (Transparent Background) */
+.about-home {
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* Set About Me section text to white */
+}
+
+
+.about-home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff; /* White font color */
+}
+
+.about-home p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #fff; /* White font color */
+}
+
+/* Social Media Section (Transparent Background) */
+.social-media {
+    padding: 80px 20px;
+    text-align: center;
+    color: white; /* Set Social Media section text to white */
+}
+
+.social-media h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff; /* White font color */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* White font color for buttons */
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: black; /* Footer text in white */
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+    color: white; /* White font color for footer */
+}
