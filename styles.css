@@ -4023,6 +4023,7 @@ body {
     padding: 80px 20px;
     background-color: ;
     text-align: center;
+	
 }
 
 .about-home h2 {
@@ -4035,7 +4036,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: #555;
+    color: white;
 }
 
 /* Social Media Section */
@@ -4346,7 +4347,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: ;
+    color: white;
 }
 
 /* Social Media Section */
@@ -4358,7 +4359,7 @@ body {
 .social-media h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #333;
+    color: white;
 }
 
 .social-buttons {
