@@ -4159,12 +4159,14 @@ body {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+	color: white;
+
 }
 
 .hero p {
@@ -4176,21 +4178,21 @@ body {
 /* About Me Section */
 .about-home {
     padding: 80px 20px;
-    background-color: ;
+    color: white;
     text-align: center;
 }
 
 .about-home h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 .about-home p {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: ;
+    color: white;
 }
 
 /* Social Media Section */
