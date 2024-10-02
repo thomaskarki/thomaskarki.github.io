@@ -4320,13 +4320,14 @@ body {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     text-align: center;
-    color: ;
+    color: white;
     padding: 0; /* No extra padding */
 }
 
 .hero h1 {
     font-size: 2.5rem; /* Slightly reduced font size */
     margin-bottom: 15px; /* Tighter margin */
+	color: white;
 }
 
 .hero p {
@@ -4548,7 +4549,7 @@ html, body {
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: #333;
+    color: white;
 }
 
 /* About Me Section */
