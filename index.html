@@ -26,41 +26,88 @@
   -webkit-touch-callout: none; /* Disable iOS long-press menu */
 }
 	
+
+      #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+
+      .loader {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #ccc;
+        border-top: 6px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      body.loaded #loader-wrapper {
+        opacity: 0;
+        visibility: hidden;
+      }
 </style>
 	  
 <SCRIPT language=JavaScript>
 
+  var message = "There is nothing to see there my friend. Please view my website like a good boy! 😁";
 
+      function rtclickcheck(keyp) {
+        if (navigator.appName == "Netscape" && keyp.which == 3) {
+          alert(message);
+          return false;
+        }
+        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
+          alert(message);
+          return false;
+        }
+      }
 
-var message = "There is nothing to see there my friend. Please view my website like a good boy! 😁";
+      document.onmousedown = rtclickcheck;
 
-function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+      document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey || e.shiftKey || e.keyCode == 123) {
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      });
 
-if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+      document.addEventListener('mousedown', function (e) {
+        if (e.detail === 3) {
+          e.preventDefault();
+        }
+      });
 
-document.onmousedown = rtclickcheck;
+      document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+      });
 
-document.addEventListener ('keydown',(e) => {
-if(e.ctrlKey || e.shiftKey || e.keyCode == 123){
-e.stopPropagation()
-e.preventDefault()
-}
-})
-
- document.addEventListener('mousedown', function(e) {
-    if (e.detail === 3) {
-      e.preventDefault();
-    }
-  });
-
-document.addEventListener('selectstart', function(e) {
-    e.preventDefault();
-  });
-document.body.style.userSelect = 'none';
-
+      document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("load", () => {
+          document.body.classList.add("loaded");
+        });
+        setTimeout(() => document.body.classList.add("loaded"), 5000);
+      });
 </SCRIPT>
   </head>
   <body>
+<div id="loader-wrapper">
+      <div class="loader"></div>
+    </div>
 
     <!-- MENU -->
     <nav class="navbar navbar-expand-sm navbar-light">
