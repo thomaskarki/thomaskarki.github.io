@@ -35,6 +35,17 @@ e.stopPropagation()
 e.preventDefault()
 }
 })
+
+ document.addEventListener('mousedown', function(e) {
+    if (e.detail === 3) {
+      e.preventDefault();
+    }
+  });
+
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+  });
+document.body.style.userSelect = 'none';
 </SCRIPT>
   </head>
   <body>
